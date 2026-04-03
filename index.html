@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クローラーテストサイト</title>
+  <style>
+    body { font-family: 'Meiryo', Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f5f5f5; }
+    h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    h2 { color: #34495e; margin-top: 30px; }
+    .file-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin: 20px 0; }
+    .file-card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .file-card .icon { font-size: 36px; margin-bottom: 10px; }
+    .file-card h3 { margin: 0 0 8px 0; color: #2c3e50; font-size: 14px; }
+    .file-card p { font-size: 12px; color: #666; margin: 0 0 12px 0; }
+    .file-card a { display: inline-block; background: #3498db; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 13px; }
+    .file-card a:hover { background: #2980b9; }
+    .info-box { background: #eaf4fb; border-left: 4px solid #3498db; padding: 15px 20px; border-radius: 4px; margin: 20px 0; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #999; font-size: 12px; text-align: center; }
+    nav a { margin-right: 15px; color: #3498db; text-decoration: none; font-size: 14px; }
+    nav a:hover { text-decoration: underline; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; color: white; margin-left: 6px; }
+    .badge-docx { background: #2E75B6; }
+    .badge-csv  { background: #217346; }
+    .badge-txt  { background: #7B3F00; }
+  </style>
+</head>
+<body>
+  <h1>🕷️ クローラーテストサイト</h1>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="page2.html">ファイル一覧</a>
+    <a href="page3.html">サイトについて</a>
+  </nav>
+
+  <div class="info-box">
+    <strong>用途について：</strong>本サイトはWebクローラーシステムのテスト用として作成されました。Word・CSV・TXTなど複数形式のファイルダウンロード機能を検証するためのサンプルファイルを提供しています。
+  </div>
+
+  <h2>📁 ダウンロード用テストファイル</h2>
+  <div class="file-grid">
+
+    <div class="file-card">
+      <div class="icon">📄</div>
+      <h3>4月の満月は「ピンクムーン」<span class="badge badge-docx">DOCX</span></h3>
+      <p>Wordドキュメントのサンプルファイルです。クローラーがDocxファイルを検出・ダウンロードできるか検証します。</p>
+      <a href="files/4月の満月は「ピンクムーン」.docx" download>ダウンロード</a>
+    </div>
+
+    <div class="file-card">
+      <div class="icon">📊</div>
+      <h3>東京都日平均気温の月平均値<span class="badge badge-csv">CSV</span></h3>
+      <p>CSVデータファイルのサンプルです。クローラーがCSVファイルを検出・ダウンロードできるか検証します。</p>
+      <a href="files/東京都日平均気温の月平均値.csv" download>ダウンロード</a>
+    </div>
+
+    <div class="file-card">
+      <div class="icon">📝</div>
+      <h3>トカラ列島で新種の鳥発見<span class="badge badge-txt">TXT</span></h3>
+      <p>テキストファイルのサンプルです。クローラーがTXTファイルを検出・ダウンロードできるか検証します。</p>
+      <a href="files/トカラ列島で新種の鳥発見.txt" download>ダウンロード</a>
+    </div>
+
+  </div>
+
+  <h2>🔗 関連ページ</h2>
+  <ul>
+    <li><a href="page2.html">ファイル一覧ページ（テーブル形式）</a></li>
+    <li><a href="page3.html">サイトについて</a></li>
+  </ul>
+
+  <footer>
+    クローラーテストサイト &copy; 2026 ｜ Webクローラー機能テスト専用サイト
+  </footer>
+</body>
+</html>

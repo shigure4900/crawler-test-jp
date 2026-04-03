@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ファイル一覧 - クローラーテストサイト</title>
+  <style>
+    body { font-family: 'Meiryo', Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f5f5f5; }
+    h1 { color: #2c3e50; border-bottom: 3px solid #e67e22; padding-bottom: 10px; }
+    h2 { color: #34495e; margin-top: 30px; }
+    table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+    th { background: #e67e22; color: white; padding: 12px 16px; text-align: left; font-family: 'Meiryo', Arial, sans-serif; }
+    td { padding: 11px 16px; border-bottom: 1px solid #eee; font-size: 13px; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fef9f0; }
+    a { color: #e67e22; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav a { margin-right: 15px; color: #3498db; text-decoration: none; font-size: 14px; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #999; font-size: 12px; text-align: center; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; color: white; }
+    .badge-docx { background: #2E75B6; }
+    .badge-csv  { background: #217346; }
+    .badge-txt  { background: #7B3F00; }
+  </style>
+</head>
+<body>
+  <h1>📂 ファイル一覧</h1>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="page2.html">ファイル一覧</a>
+    <a href="page3.html">サイトについて</a>
+  </nav>
+
+  <h2>テストファイル一覧</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ファイル名</th>
+        <th>形式</th>
+        <th>内容</th>
+        <th>ダウンロード</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4月の満月は「ピンクムーン」.docx</td>
+        <td><span class="badge badge-docx">DOCX</span></td>
+        <td>Wordドキュメント サンプル</td>
+        <td><a href="files/4月の満月は「ピンクムーン」.docx" download>ダウンロード</a></td>
+      </tr>
+      <tr>
+        <td>東京都日平均気温の月平均値.csv</td>
+        <td><span class="badge badge-csv">CSV</span></td>
+        <td>CSVデータ サンプル</td>
+        <td><a href="files/東京都日平均気温の月平均値.csv" download>ダウンロード</a></td>
+      </tr>
+      <tr>
+        <td>トカラ列島で新種の鳥発見.txt</td>
+        <td><span class="badge badge-txt">TXT</span></td>
+        <td>テキストファイル サンプル</td>
+        <td><a href="files/トカラ列島で新種の鳥発見.txt" download>ダウンロード</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    クローラーテストサイト &copy; 2026 ｜ Webクローラー機能テスト専用サイト
+  </footer>
+</body>
+</html>
